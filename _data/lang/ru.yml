@@ -1,54 +1,65 @@
 lng:
   name: Русский
-  based on ISO_639-1 https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+  #based on ISO_639-1 https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
   code: ru
-  specifically needed for open-graph meta og:locale. if open_graph or html_lng_with_country_code not enabled in _data/conf/main.yml, it's not necessary.
-  For html tags, you can enable or disable using html_lng_with_country_code defined in _data/conf/main.yml
-  based on ISO_3166-1 https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+  #specifically needed for open-graph meta og:locale. if open_graph or html_lng_with_country_code not enabled in _data/conf/main.yml, it's not necessary.
+  #For html tags, you can enable or disable using html_lng_with_country_code defined in _data/conf/main.yml
+  #based on ISO_3166-1 https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
   country: RU
   switch_title: Ru
-offer:
-  title: Язык
-  msg_page: Посмотреть эту страницу на русском.
-  # if page translation is not available, use this.
-  msg_site: На главную
+  offer:
+    title: Язык
+    msg_page: Посмотреть эту страницу на русском.
+    # if page translation is not available, use this.
+    msg_site: На главную
+
 date:
-  if %b is used in the long format, it will be replaced with the corresponding item in 'months' list below.
+  #if %b is used in the long format, it will be replaced with the corresponding item in 'months' list below.
   long: "%-d %b %Y"
   day: "%-d"
   year: "%Y"
-  months itself also used in Archive page.
+  #months itself also used in Archive page.
   months: [Янв, Фев, Мар, Апр, Май, Июн, Июл, Авг, Сен, Окт, Ноя, Дек]
+
 not_found:
   header: Страница не найдена
   line1: Запрашиваемая страница не найдена.
   line2: Попробуйте воспользоваться меню или поиском по сайту.
-  no_translation_tooltip: Перевод недоступен
+  
+no_translation_tooltip: Перевод недоступен
+
 navigation:
   contact_header: Контакты
   side_navigation_button: Боковое меню
   scroll_back_to_top: Наверх
-  color_scheme_switch_tooltip: Цветовая схема
+  
+color_scheme_switch_tooltip: Цветовая схема
+
 search:
   placeholder: Поиск
   noResultText: Ничего не найдено.
+
 image_viewer:
   load_error: Не удалось загрузить изображение.
+
 copyright:
   additional_text: " Все права защищены."
+
 creative_commons:
   some_rights_reserved: Некоторые права защищены.
-  check _data/owner/[language].yml for license type.
+  #check _data/owner/[language].yml for license type.
   by: Если не указано иное, контент этого сайта распространяется по лицензии Creative Commons Attribution 4.0 International.
   by-nd: Если не указано иное, контент этого сайта распространяется по лицензии Creative Commons Attribution-NoDerivatives 4.0 International.
   by-sa: Если не указано иное, контент этого сайта распространяется по лицензии Creative Commons Attribution-ShareAlike 4.0 International.
   by-nc: Если не указано иное, контент этого сайта распространяется по лицензии Creative Commons Attribution-NonCommercial 4.0 International.
   by-nc-nd: Если не указано иное, контент этого сайта распространяется по лицензии Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International.
   by-nc-sa: Если не указано иное, контент этого сайта распространяется по лицензии Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.
-for 404 layout
+
+#for 404 layout
 not-found:
   title: "404"
-for post layout
+
+#for post layout
 post:
   read_time:
     unit:  " мин "
@@ -94,7 +105,8 @@ post:
       linkedin: LinkedIn
       email: Email
       copy_link: Копировать ссылку
-for post-list layout
+
+#for post-list layout
 post-list:
   title: Блог
   button_name: Блог
@@ -117,47 +129,56 @@ post-list:
         year: Год
         # you can use these wildcards, {property} {value} {thumb}
         resultFoundTitleFormat: "{property} : {thumb}"
-for home layout
+
+#for home layout
 home:
   title: Добро пожаловать
   button_name: Главная
   new_posts_title: Новые статьи
   new_posts_show_more_button: Читать далее ...
-for archives layout
+
+#for archives layout
 archives:
   title: Архив
   button_name: Архив
   page_header: Архив
-for about layout
+
+#for about layout
 about:
   title: О нас
   button_name: О нас
   email_title: email
-for links layout
+
+#for links layout
 links:
   title: Ссылки
   button_name: Ссылки
   link_text: Веб-сайт
   info_text: Информация
-for projects layout
+
+#for projects layout
 projects:
   title: Проекты
   button_name: Проекты
   read_more_text: Читать далее
   read_less_text: Скрыть
-for privacy-policy layout
+
+#for privacy-policy layout
 privacy-policy:
   title: &privacy_policy_title Политика конфиденциальности
-constants to be replaced for
+
+#constants to be replaced for
 constants:
   greetings: Привет
   welcome: Добро пожаловать
   sample: Пример
-for contact form
+
+#for contact form
 contact_form:
   button_name: Форма обратной связи
   formLoadingText: Загрузка формы...
-for cookie consent
+
+#for cookie consent
 cookie_consent:
   privacy_policy_link_text: *privacy_policy_title
   side_nav_setting_button_tooltip: &cookie_settings Настройки cookies
@@ -184,7 +205,7 @@ cookie_consent:
       always_active: Всегда активны
     consent_types:
       necessary:
-        title: Строго необходимые cookies
+        title: Только необходимые cookies
         info: >
           Эти файлы cookie необходимы для работы сайта и не могут быть отключены.
           Они обычно устанавливаются при изменении настроек сайта, например, цветовой схемы.
