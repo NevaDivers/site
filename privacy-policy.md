@@ -3,10 +3,10 @@ layout: privacy-policy
 # Идентификатор пары мультиязычных страниц, который должен совпадать с переводами этой страницы. (Это имя должно быть уникальным)
 lng_pair: id_privacy_policy
 
-# image for page specific usage
+# изображение для использования на конкретной странице
 #img: ":image.jpg"
-# publish date (used for seo)
-# if not specified, site.time will be used.
+# дата публикации (используется для seo)
+# если не указано, будет использоваться
 #date: 2022-03-03 12:32:00 +0000
 
 # for override items in _data/lang/[language].yml
@@ -23,7 +23,7 @@ lng_pair: id_privacy_policy
 
 # optional
 # please use the "image_viewer_on" below to enable image viewer for individual pages or posts (_posts/ or [language]/_posts folders).
-# image viewer can be enabled or disabled for all posts using the "image_viewer_posts: true" setting in _data/conf/main.yml.
+# Просмотр изображений можно включить или отключить для всех публикаций с помощью параметра "image_viewer_posts: true" setting in _data/conf/main.yml.
 #image_viewer_on: true
 # please use the "image_lazy_loader_on" below to enable image lazy loader for individual pages or posts (_posts/ or [language]/_posts folders).
 # image lazy loader can be enabled or disabled for all posts using the "image_lazy_loader_posts: true" setting in _data/conf/main.yml.
