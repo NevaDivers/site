@@ -6,7 +6,7 @@ brand: "Neva Divers"
 # Текст под названием бренда
 brand_sub_text: "$site_sample"
 # Используется для SEO meta автора поста (если не указано в самом посте)
-name: "ND team"
+name: "ND Team"
 # Тексты заголовка главной страницы
 home:
   # Вы также можете использовать $site_brand, $site_greetings, $site_welcome в line1 и line2 для замены текста.
