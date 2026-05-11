@@ -7,7 +7,7 @@ on:
 
 jobs:
   create-release:
-    if: ${{ github.repository == 'NevaDivers/neva-divers.github.io' && startsWith(github.ref, 'refs/tags/v') }}
+    if: ${{ github.repository == 'neva-divers/site' && startsWith(github.ref, 'refs/tags/v') }}
     runs-on: ubuntu-latest
     steps:
       - name: checkout

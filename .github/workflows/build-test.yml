@@ -25,7 +25,7 @@ on:
 
 jobs:
   build-test:
-    if: ${{ github.repository == 'NevaDivers/neva-divers.github.io' }}
+    if: ${{ github.repository == 'neva-divers/site' }}
     runs-on: ubuntu-latest
     env: # $BUNDLE_GEMFILE должно быть задано на уровне задания, то есть для всех этапов
       BUNDLE_GEMFILE: ${{ github.workspace }}/Gemfile
